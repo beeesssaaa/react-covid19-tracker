@@ -1,3 +1,15 @@
+# React-Covid-19-Tracker
+Tried this awesome tutorial on youtube
+
+[🔴 Build a COVID-19 Tracker with REACT JS for Beginners (React Hooks and Material UI)](https://www.youtube.com/watch?v=cF3pIMJUZxM)
+
+- React
+- flexbox
+- Material-UI
+- React-leaflet
+- React-chartjs-2
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
