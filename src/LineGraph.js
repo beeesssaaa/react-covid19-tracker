@@ -27,7 +27,7 @@ const options = {
             {
                 type: "time",
                 time: {
-                    format: "MM/DD/YY",
+                    parser: "MM/DD/YY",
                     tooltipFormat: "ll",
                 },
             },
@@ -47,7 +47,7 @@ const options = {
         ],
     },
 }
-function LineGraph({ casesType="cases" }) {
+function LineGraph({ casesType="cases", ...props }) {
     const [data, setData] = useState({});
     // https://disease.sh/v3/covid-19/historical/all?lastdays=120
 
@@ -80,7 +80,7 @@ function LineGraph({ casesType="cases" }) {
     }, [casesType]);
 
     return (
-        <div className="lineGraph">
+        <div className={props.className}>
             {data?.length > 0 && (
                 <Line 
                     options={options}
